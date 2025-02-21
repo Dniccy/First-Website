@@ -2,20 +2,22 @@
   #aboutme{
       font-size:20px;
       line-height: 1.2;
-      max-width: 800px;
       padding: 20px;
+      text-align: center;
       font-style: italic;
       font-family: 'Courier New', Courier, monospace;
       color: grey; 
     }
+
   h1{
       font-size: 40px;
       padding: 20px;
-      text-align: left;
+      text-align: center;
       font-family:'Courier New', Courier, monospace;
       font-style: italic;
       color: #525252;
     }
+
     img {
       max-width: 100%;
       height: auto;
@@ -23,3 +25,13 @@
       margin: 20px auto;
       border-radius: 8px;
   }
+
+#aboutmeparagraph{
+  border: 5px outset #949292;
+  padding: 20px;
+}
+
+#images{
+border: 5px outset#525252;
+padding: 10px;
+}
