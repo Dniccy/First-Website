@@ -1,13 +1,25 @@
 
   #aboutme{
       font-size:20px;
+      line-height: 1.2;
+      max-width: 800px;
+      padding: 20px;
       font-style: italic;
       font-family: 'Courier New', Courier, monospace;
       color: grey; 
     }
   h1{
       font-size: 40px;
+      padding: 20px;
+      text-align: left;
       font-family:'Courier New', Courier, monospace;
       font-style: italic;
       color: #525252;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+  }
