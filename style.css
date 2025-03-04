@@ -7,14 +7,14 @@
     margin: 80px auto;
     max-width: 800px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-  }
+}
 
   .aboutme p{
     color: #e6e6e6;
     font-family: 'kanit';
     font-size: 18px;
     line-height: 1.6;
-  }
+}
   .aboutme h1{
     font-family: 'kanit';
     font-size: 24px;
@@ -23,19 +23,21 @@
     border-bottom: 2px solid #e6e6e6;
     padding-bottom: 5px;
     display: inline-block;
-
-  }
+}
 /*about me page*/
 
 /*headings*/
   h1{
     color: #e6e6e6;
     font-family: 'kanit';
-    }
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
   h2{
     font-family: 'kanit';
-    color: #e6e6e6;
-    }  
+    color: #b0b0b8;
+    font-size: 1.4rem;
+}  
 /*headings*/
 
 /*paragraph*/
@@ -54,7 +56,7 @@ p{
     margin: 80px auto;
     max-width: 800px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+}
       
   .chapter-section h2{
     font-family: 'kanit';
@@ -64,17 +66,16 @@ p{
     border-bottom: 2px solid #e6e6e6;
     padding-bottom: 5px;
     display: inline-block;
-    }
+}
   .chapter-section p{
     font-family: 'kanit';
     font-size: 18px;
     color: #e6e6e6;
     line-height: 1.6;
-  }
+}
 /*chapter section*/
 
-    
-
+/*body*/
   body{
     background-repeat: no-repeat;
     width: 100%;
@@ -83,7 +84,11 @@ p{
     background-color: #32323c;
     background-position: fixed;
     font-family: 'kanit';
+    padding: 0;
+    margin: 0;
 }
+/*body*/
+
 /*contactus*/
   .contactus{
     font-family:'kanit';
@@ -112,19 +117,19 @@ a:link{
 /*links*/
 
 /*nav styles*/
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0px;
-  z-index: 1000;
-  background-color: rgba(22, 22, 22, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
-  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 1000;
+    background-color: rgba(22, 22, 22, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+}
   nav ul{
     list-style: none;
-    padding: 0;
+    padding: 0px 0px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -132,7 +137,7 @@ nav{
   }
   nav li{
     margin: 0 15px;
-  }
+}
   nav a{
     font-family: "kanit", sans-serif;
     font-size: 16px;
@@ -142,8 +147,97 @@ nav{
     padding-bottom: 5px;
     position: relative;
     }
-    nav a:hover{
-      color:#1b1b20;
-      border-bottom: 2px solid #e6e6e6;
+  nav a:hover{
+    color:#515157;
+    border-bottom: 2px solid #515157;
+}
+/*nav styles*/
+
+/*header section style*/
+    .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100vh;
+     width: 100vw;
+     text-align: center;
+     padding: 2rem;
+     padding-top: 30;
+     background-image: url(/Images/sphere.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;    
+     position: relative;
+}
+
+    .container::before{ 
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
     }
-    /*nav styles*/
+    .header-content{
+      position: relative;
+      z-index: 1;
+}
+/*header section style*/
+
+/*footer section style*/
+
+    footer{
+      background-color: #1b1b20;
+      padding: 40px 0;
+      color: #e6e6e6;
+}
+    .footer-content{
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto; 
+}    
+
+    .footer-links{
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+}
+
+    .footer-links a{
+      color: #e6e6e6;
+      text-decoration: none;
+      transition: color 0.3s, border-bottom 0.3s;
+}
+
+    .footer-links a:hover{
+      color: #515157;
+      text-decoration: none;
+      transition: color 0.3s, border-bottom 0.3s;
+      border-bottom: 2px solid #515157;
+}
+    .footer-social{
+      margin-top: 0;
+}
+    .footer-social a{
+      color: #e6e6e6;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+}
+.footer-social a:hover{
+  color: #515157;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid #515157;
+}
+
+
+
+
+
+/*footer section style*/
