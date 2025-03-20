@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web design page">
+    <meta name="keywords" content="web design, portfolio, e-commerce, user-friendly, functionality" >
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
       <link rel="stylesheet" href="style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +25,40 @@
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="about me para.html">About</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
         <li><a href="contact us.html">Contact</a></li>
       </ul>
     </nav>
     
 
-    <section class="contactus"> 
-        <h1>Contact us:</h1>
+    <div class="container">
+    </div>
 
-        <p>
-        <a href="mailto:dominicnewbold@outlook.com">Email:<strong>dominicnewbold@outlook.com</strong></a>
-        <br>
-          Tel:<strong>07123456789</strong>
-        </p>
-    </section>
+    <div class="contact">
+      <div class="contact-box">
+        <h2>Send us a message</h2>
+          <form action="form-handler.php" method="post"><br>
+           <label
+            for="firstname">First Name</label><br>
+           <input 
+           type="text" 
+           id="firstname" 
+           name="firstname" 
+           value="First Name"><br>
+           <label 
+           for="Surname">Surname</label><br>
+           <input 
+           type="text" 
+           id="Surname" 
+           name="Surname" 
+           value="Surname"><br><br>
+           <input 
+           type="submit">
+          </form>
+      </div>
+
+
+    </div>
 
 <footer>
   <div class="footer-content">
