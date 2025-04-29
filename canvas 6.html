@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <Title>canvas example 6</Title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+ <body>
+  <canvas id="mycanvas" width="400"  height="200"></canvas>
+    <script> 
+      const canvas = document.getElementById("mycanvas");
+      const ctx = canvas.getContext("2d");
+
+      //create a new image object
+      const img = new Image();
+
+      //set the image source
+      img.src = "hypnotic.png";
+
+      //when the image is loaded, draw onto canvas
+      img.onload = function(){
+        ctx.drawImage (img, 0, 0, canvas.width, canvas.height);
+      };
+
+      //add click event listener
+      canvas.addEventListener("click", function (){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const angle = 0;
+        rotateImage(img, angle);
+      });
+
+      //function to rotate
+      function rotateImage(image, angle) {
+        ctx,save();
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate((angle * Math.PI) / 180);
+        ctx.drawImage(
+          image,
+          -canvas.width / 2,
+          -canvas.height / 2,
+          canvas.width,
+          canvas.height
+        );
+        ctx.restore();      
+
+        //increment angle for next rotation
+        const newAngle = angle + 10;
+        if (newAngle < 360) {
+          setTimeout(function () {
+            rotateImage(image, newAngle);
+          }, 100);
+        }
+      }
+    </script>
+ </body> 
+</html>
